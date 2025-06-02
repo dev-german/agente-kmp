@@ -1,4 +1,3 @@
-
 # 🤖 Agente de Sugerencias KMP para Documentos FM35
 
 Este proyecto implementa un agente inteligente que sugiere documentos relevantes de un repositorio institucional mientras se redacta un documento FM35 (Solicitud de Atención de Requerimientos de Producto Software). Utiliza el algoritmo de búsqueda Knuth-Morris-Pratt (KMP) para encontrar coincidencias.
@@ -50,11 +49,12 @@ pip install -r requirements.txt
 ```
 
 Contenido de `requirements.txt`:
+
 ```text
 flask
 watchdog
 requests
-pyyaml 
+pyyaml
 ```
 
 ---
@@ -86,7 +86,7 @@ python watcher.py
 
 ## 📝 Estructura esperada de tus archivos Markdown (`fm35/docs/*.md`)
 
-Cada archivo debe tener un *frontmatter* como este:
+Cada archivo debe tener un _frontmatter_ como este:
 
 ```markdown
 ---
@@ -95,6 +95,7 @@ title: Plan de Contingencia
 tags: [fm35, seccion:planificacion]
 patron: incidentes
 ---
+
 Contenido del documento...
 ```
 
@@ -115,6 +116,10 @@ Contenido del documento...
 - Se utiliza el algoritmo **KMP** para mayor eficiencia en la búsqueda.
 
 ---
+
+## 💹 Diagrama de componentes
+
+![Diagrama de componentes](static/img/diagrama-agente-busqueda.png)
 
 ## 🛠️ Mantenimiento
 
